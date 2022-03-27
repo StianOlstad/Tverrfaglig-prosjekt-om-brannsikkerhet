@@ -28,7 +28,7 @@ public class StartFire_Script : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == ignitionObject && fireStarted == false)
         {
-            fireStarted = true;
+            
             _particles.Play();
             Debug.Log("Fire Started");
             StartCoroutine("FireSpread");
@@ -36,11 +36,25 @@ public class StartFire_Script : MonoBehaviour
     }
 
     private IEnumerator FireSpread(){
-        yield return new WaitForSeconds(fireSpreadRate);
-        for (int i = 0; i < firePos.Length; i++)
+        if (fireStarted == false)
         {
-            firePos[i].SetActive(true);
+            fireStarted = true;
             yield return new WaitForSeconds(fireSpreadRate);
         }
+        
+        for (int i = 0; i < firePos.Length; i++)
+        {
+            if (firePos[i].activeSelf == false)
+            {
+                firePos[i].SetActive(true);
+            }else
+            {
+                yield return new WaitForSeconds(0);
+            }
+            
+            yield return new WaitForSeconds(fireSpreadRate);
+        }
+        Debug.Log("1");
+        StopCoroutine("FireSpread");
     }
 }
