@@ -30,7 +30,7 @@ public class StartFire_Script : MonoBehaviour
         {
             
             _particles.Play();
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
+            //GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
             Debug.Log("Fire Started");
             StartCoroutine("FireSpread");
         }
