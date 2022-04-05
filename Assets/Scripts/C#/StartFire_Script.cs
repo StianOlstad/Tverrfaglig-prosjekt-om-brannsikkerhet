@@ -7,7 +7,7 @@ public class StartFire_Script : MonoBehaviour
 {
     public string ignitionObject;
     public bool fireStarted;
-    public GameObject[] firePos;
+    [SerializeField] private GameObject[] firePos;
     [SerializeField] private float fireSpreadRate;
 
     public int firesStarted;
@@ -26,11 +26,11 @@ public class StartFire_Script : MonoBehaviour
         _particles.Stop();
     }
     private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.name == ignitionObject && fireStarted == false)
+        if (other.gameObject.tag == ignitionObject && fireStarted == false)
         {
             
             _particles.Play();
-            //GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
+            GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
             Debug.Log("Fire Started");
             StartCoroutine("FireSpread");
         }
