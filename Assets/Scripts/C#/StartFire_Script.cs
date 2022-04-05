@@ -12,7 +12,7 @@ public class StartFire_Script : MonoBehaviour
 
     public int firesStarted;
 
-    private ParticleSystem _particles;
+    [SerializeField]private ParticleSystem _particles;
 
     private void Start() {
         firePos = GameObject.FindGameObjectsWithTag("FireSpawn");
@@ -22,11 +22,11 @@ public class StartFire_Script : MonoBehaviour
             firePos[i].SetActive(false);
         }
 
-        _particles = gameObject.GetComponent<ParticleSystem>();
+        //_particles = gameObject.GetComponent<ParticleSystem>();
         _particles.Stop();
     }
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == ignitionObject && fireStarted == false)
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.name == ignitionObject && fireStarted == false)
         {
             
             _particles.Play();
@@ -35,6 +35,16 @@ public class StartFire_Script : MonoBehaviour
             StartCoroutine("FireSpread");
         }
     }
+    /*private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.name == ignitionObject && fireStarted == false)
+        {
+            
+            _particles.Play();
+            //GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
+            Debug.Log("Fire Started");
+            StartCoroutine("FireSpread");
+        }
+    }*/
 
     private IEnumerator FireSpread(){
         if (fireStarted == false)
