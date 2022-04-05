@@ -3442,6 +3442,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &463422080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1253142483436318, guid: 89956e675b749204c8e10395ce2b5fb9, type: 3}
+  m_PrefabInstance: {fileID: 165335849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &475258728
 Mesh:
   m_ObjectHideFlags: 0
@@ -4262,7 +4267,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-7606
+  m_Name: pb_Mesh-3688
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7254,7 +7259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1253142483436318, guid: 89956e675b749204c8e10395ce2b5fb9, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FireSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 4521404770085940, guid: 89956e675b749204c8e10395ce2b5fb9, type: 3}
       propertyPath: m_RootOrder
@@ -11165,7 +11170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignitionObject: CarryFlame
   fireStarted: 0
-  firePos: []
+  firePos:
+  - {fileID: 463422080}
   fireSpreadRate: 5
   firesStarted: 0
   _particles: {fileID: 1015249702}
@@ -13939,7 +13945,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-7648
+  m_Name: pb_Mesh-3730
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
