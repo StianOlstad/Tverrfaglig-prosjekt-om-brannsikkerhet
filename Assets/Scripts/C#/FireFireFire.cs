@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FireFireFire : MonoBehaviour
-{
+{   
+    [SerializeField] private LayerMask _layer;
     [SerializeField] private float _delay = 3f;
     [SerializeField] private float radius = 2f;
     public bool OnFire;
@@ -23,7 +24,7 @@ public class FireFireFire : MonoBehaviour
 
     private IEnumerator FireSpreadTimer(){
         yield return new WaitForSeconds(_delay);
-        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius);
+        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius, _layer);
         foreach (var item in hitColliders)
         {
             if (item.gameObject.GetComponent<FireFireFire>().OnFire == false)

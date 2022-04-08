@@ -37,7 +37,7 @@ public class StartFire_Script : MonoBehaviour
 
     private IEnumerator FireSpreadTimer(){
         yield return new WaitForSeconds(_delay);
-        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius);
+        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius, _layer);
         foreach (var item in hitColliders)
         {
             if (item.gameObject.GetComponent<FireFireFire>().OnFire == false)

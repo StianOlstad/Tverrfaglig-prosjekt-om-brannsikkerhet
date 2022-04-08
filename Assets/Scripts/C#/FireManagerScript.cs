@@ -5,12 +5,20 @@ using UnityEngine.UI;
 
 public class FireManagerScript : MonoBehaviour
 {
-    [SerializeField] private int numberofSources;
+    
+    [SerializeField] private int OnFire;
     [SerializeField] private Slider _slider;
-    [SerializeField][Range(0f, 999f)] private float _timerMax;
-    [SerializeField] private float _time;
-    private int scale;
-    private float _timePercent;
+    private int FireObjects;
     
-    
+    private void Start() {
+        FireObjects = GameObject.FindGameObjectsWithTag("FireSpawn").Length;
+    }
+
+    private void Update() {
+        
+    }
+
+    public void StartedBurning(){
+        OnFire += 1;
+    }
 }
