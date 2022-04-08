@@ -5,67 +5,47 @@ using UnityEngine;
 
 public class StartFire_Script : MonoBehaviour
 {
-    public string ignitionObject;
-    public bool fireStarted;
-    [SerializeField] private GameObject[] firePos;
-    [SerializeField] private float fireSpreadRate;
+    public GameObject _ob;
+    [SerializeField] private string FireStarterObject;
+    [SerializeField] private LayerMask _layer;
+    [SerializeField] private float radius;
+    [SerializeField] private float _delay = 3f;
 
-    public int firesStarted;
+    private RaycastHit hitinfo;
+    private RaycastHit hit;
+    public bool OnFire;
 
-    [SerializeField]private ParticleSystem _particles;
+    public static List<GameObject> gameObjectsWithinRadius = new List<GameObject>();
 
     private void Start() {
-        firePos = GameObject.FindGameObjectsWithTag("FireSpawn");
-        firePos = firePos.OrderBy((d) => (d.transform.position - transform.position).sqrMagnitude).ToArray();
-        for (int i = 0; i < firePos.Length; i++)
-        {
-            firePos[i].SetActive(false);
-        }
-
-        //_particles = gameObject.GetComponent<ParticleSystem>();
-        _particles.Stop();
+        _ob.gameObject.GetComponent<ParticleSystem>().Stop();
     }
+
     private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.tag == ignitionObject && fireStarted == false)
+        if (other.gameObject.tag == FireStarterObject && OnFire == false)
         {
-            
-            _particles.Play();
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
-            Debug.Log("Fire Started");
-            StartCoroutine("FireSpread");
+            beginfire();
         }
     }
-    /*private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.name == ignitionObject && fireStarted == false)
-        {
-            
-            _particles.Play();
-            //GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>().SourceActive();
-            Debug.Log("Fire Started");
-            StartCoroutine("FireSpread");
-        }
-    }*/
 
-    private IEnumerator FireSpread(){
-        if (fireStarted == false)
+    public void beginfire() {
+        _ob.gameObject.GetComponent<ParticleSystem>().Play();
+        OnFire = true;
+        StartCoroutine("FireSpreadTimer");
+
+    }
+
+    private IEnumerator FireSpreadTimer(){
+        yield return new WaitForSeconds(_delay);
+        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, radius);
+        foreach (var item in hitColliders)
         {
-            fireStarted = true;
-            yield return new WaitForSeconds(fireSpreadRate);
-        }
-        
-        for (int i = 0; i < firePos.Length; i++)
-        {
-            if (firePos[i].activeSelf == false)
+            if (item.gameObject.GetComponent<FireFireFire>().OnFire == false)
             {
-                firePos[i].SetActive(true);
-            }else
-            {
-                yield return new WaitForSeconds(0);
+                item.gameObject.GetComponent<FireFireFire>().beginfire();
             }
-            
-            yield return new WaitForSeconds(fireSpreadRate);
         }
-        Debug.Log("1");
-        StopCoroutine("FireSpread");
+
+        yield break;
     }
 }
