@@ -9,7 +9,9 @@ public class FireFireFire : MonoBehaviour
     [SerializeField] private LayerMask _layer;
     private RaycastHit hitinfo;
     private RaycastHit hit;
-    private bool OnFire;
+    public bool OnFire;
+
+    public static List<GameObject> gameObjectsWithinRadius = new List<GameObject>();
 
     private void Start() {
         gameObject.GetComponent<ParticleSystem>().Stop();
@@ -24,6 +26,25 @@ public class FireFireFire : MonoBehaviour
     }
 
     public void beginfire() {
+        gameObject.GetComponent<ParticleSystem>().Play();
+        OnFire = true;
+        StartCoroutine("FireSpreadTimer");
+
+    }
+
+    private IEnumerator FireSpreadTimer(){
+        foreach (var item in gameObjectsWithinRadius)
+        {
+            if (item.gameObject.GetComponent<FireFireFire>().OnFire == false)
+            {
+                item.gameObject.GetComponent<FireFireFire>().beginfire();
+            }
+        }
+
+        yield break;
+    }
+
+    /*public void beginfire() {
         Debug.Log("2");
         gameObject.GetComponent<ParticleSystem>().Play();
         OnFire = true;
@@ -35,5 +56,5 @@ public class FireFireFire : MonoBehaviour
             hit.collider.GetComponent<GameObject>().GetComponent<FireFireFire>().beginfire();
             
         }
-    }
+    }*/
 }
