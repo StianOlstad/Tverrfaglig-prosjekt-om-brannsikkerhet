@@ -9,6 +9,7 @@ public class FireManagerScript : MonoBehaviour
     [SerializeField] private int OnFire;
     [SerializeField] private Slider _slider;
     private int FireObjects;
+    private float hP;
     
     private void Start() {
         FireObjects = GameObject.FindGameObjectsWithTag("FireSpawn").Length;
