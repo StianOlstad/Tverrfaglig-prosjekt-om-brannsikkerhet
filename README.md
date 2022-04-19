@@ -1,1 +1,0 @@
-Tverrfaglig prosjekt om brannsikkerhet
