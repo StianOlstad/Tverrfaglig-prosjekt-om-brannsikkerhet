@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 769082397397059996}
   - component: {fileID: 604402312609000132}
   - component: {fileID: 605212788179596630}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PS_Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4829,7 +4829,7 @@ GameObject:
   - component: {fileID: 770817756750738006}
   - component: {fileID: 604346362188289850}
   - component: {fileID: 603614606084497492}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PS_Fire_ADD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9647,7 +9647,7 @@ GameObject:
   - component: {fileID: 770812864401274342}
   - component: {fileID: 603897043704024092}
   - component: {fileID: 603646104804363202}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PS_Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14465,7 +14465,7 @@ GameObject:
   - component: {fileID: 769439022017486572}
   - component: {fileID: 604440381785022438}
   - component: {fileID: 603709488494273704}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PS_Fire_ALPHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19283,9 +19283,9 @@ GameObject:
   - component: {fileID: 771062241201039726}
   - component: {fileID: 604565764284917332}
   - component: {fileID: 603595805292278854}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PS_Parent-noscript
-  m_TagString: FireSpawn
+  m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
