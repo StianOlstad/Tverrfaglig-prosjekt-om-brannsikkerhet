@@ -12171,6 +12171,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1304134800}
     - target: {fileID: 361174457, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 361174457, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
       propertyPath: _layer.m_Bits
       value: 128
       objectReference: {fileID: 0}
@@ -12218,6 +12222,18 @@ PrefabInstance:
       propertyPath: firePos.Array.data[0]
       value: 
       objectReference: {fileID: 463422080}
+    - target: {fileID: 1253140622004703, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253140622004703, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652783054939493, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1653665540646162, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
       propertyPath: m_Name
       value: SM_Prop_GasCan_01_Storage_2
@@ -12233,6 +12249,18 @@ PrefabInstance:
     - target: {fileID: 1653666191658590, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
       propertyPath: m_TagString
       value: CarryFlame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706517303345383, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878651432218649, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911681799909185, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61939318065407492, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
       propertyPath: m_Mesh
