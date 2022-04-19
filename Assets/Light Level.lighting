@@ -6,7 +6,7 @@ LightingSettings:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Light Level 1
+  m_Name: Light Level
   serializedVersion: 3
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 1
@@ -21,7 +21,7 @@ LightingSettings:
   m_BakeResolution: 30
   m_Padding: 2
   m_TextureCompression: 1
-  m_AO: 1
+  m_AO: 0
   m_AOMaxDistance: 0.7
   m_CompAOExponent: 0.1
   m_CompAOExponentDirect: 0
