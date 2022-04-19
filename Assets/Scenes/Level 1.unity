@@ -10910,6 +10910,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: CarryFlame
       objectReference: {fileID: 0}
+    - target: {fileID: 1097819196, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: _data._json
+      value: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097819196, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097819196, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
+      propertyPath: _data._objectReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: a162860ee4204fa46a8d972756d7d6a9, type: 2}
     - target: {fileID: 1304134806, guid: 429e6fe01f4874c48afbf37439ce2210, type: 3}
       propertyPath: firePos.Array.data[0]
       value: 
