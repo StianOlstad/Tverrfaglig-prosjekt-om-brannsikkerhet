@@ -8,16 +8,19 @@ public class FireFireFire : MonoBehaviour
     [SerializeField] private float _delay = 3f;
     [SerializeField] private float radius = 2f;
     public bool OnFire;
+    private FireManagerScript _manager;
     
 
 
     private void Start() {
         gameObject.GetComponent<ParticleSystem>().Stop();
+        _manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>();
     }
 
     public void beginfire() {
         gameObject.GetComponent<ParticleSystem>().Play();
         OnFire = true;
+        _manager.StartedBurning();
         StartCoroutine("FireSpreadTimer");
 
     }
