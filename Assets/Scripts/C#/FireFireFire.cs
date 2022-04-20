@@ -7,7 +7,7 @@ public class FireFireFire : MonoBehaviour
     [SerializeField] private LayerMask _layer;
     [SerializeField] private float _delay = 3f;
     [SerializeField] private float radius = 2f;
-    private GameObject fireBox;
+    [SerializeField] private GameObject fireBox;
     public bool OnFire;
     private FireManagerScript _manager;
     
