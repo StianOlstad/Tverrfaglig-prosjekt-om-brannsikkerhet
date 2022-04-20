@@ -21,4 +21,7 @@ public class FireManagerScript : MonoBehaviour
     public void StartedBurning(){
         OnFire += 1;
     }
+    public void death(){
+        //Lose Scene
+    }
 }
