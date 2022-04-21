@@ -155,8 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e15d0f951d61e647b97d3787587b73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScene: 0
-  losScene: 0
+  winScene: 4
+  losScene: 6
   _slider: {fileID: 1898583795}
   OnFire: 0
   FireObjects: 0
