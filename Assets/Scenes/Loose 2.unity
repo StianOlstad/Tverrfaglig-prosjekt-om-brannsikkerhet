@@ -794,7 +794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Start level 1 p\xE5 nytt"
+  m_Text: "Start level 2 p\xE5 nytt"
 --- !u!222 &1734637364
 CanvasRenderer:
   m_ObjectHideFlags: 0
