@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 1687031810}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -2424,7 +2424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 851382227}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -4642,7 +4642,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15456
+  m_Name: pb_Mesh-85272
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11123,7 +11123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 639441864}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -12987,7 +12987,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15484
+  m_Name: pb_Mesh-85300
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19931,7 +19931,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh46796
+  m_Name: pb_Mesh161992
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21082,7 +21082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 1891638758}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -30662,7 +30662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 831371030}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -31077,7 +31077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 1502522772}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -34316,7 +34316,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15470
+  m_Name: pb_Mesh-85286
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40851,7 +40851,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15430
+  m_Name: pb_Mesh-85246
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -46526,7 +46526,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15442
+  m_Name: pb_Mesh-85258
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58500,7 +58500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 579712128}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
@@ -66657,7 +66657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ob: {fileID: 96678228}
-  FireStarterObject: 
+  FireStarterObject: Carry
   _layer:
     serializedVersion: 2
     m_Bits: 128
