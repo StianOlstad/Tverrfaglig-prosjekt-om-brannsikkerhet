@@ -7,6 +7,7 @@ public class FireFireFire : MonoBehaviour
     [SerializeField] private LayerMask _layer;
     [SerializeField] private float _delay = 3f;
     [SerializeField] private float radius = 2f;
+    [SerializeField] private GameObject fireBox;
     public bool OnFire;
     private FireManagerScript _manager;
     
@@ -15,6 +16,7 @@ public class FireFireFire : MonoBehaviour
     private void Start() {
         gameObject.GetComponent<ParticleSystem>().Stop();
         _manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<FireManagerScript>();
+        fireBox.SetActive(false);
     }
 
     public void beginfire() {
@@ -22,7 +24,7 @@ public class FireFireFire : MonoBehaviour
         OnFire = true;
         _manager.StartedBurning();
         StartCoroutine("FireSpreadTimer");
-
+        fireBox.SetActive(true);
     }
 
     private IEnumerator FireSpreadTimer(){
