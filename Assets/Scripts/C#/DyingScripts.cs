@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class DyingScripts : MonoBehaviour
 {
     [SerializeField] private float MaxTimeToDeath;
-    [SerializeField] private Image bloodBorder;
+    //[SerializeField] private Image bloodBorder;
     
     private int _burning;
-    [SerializeField] private float TimeToDeath;
-    [SerializeField] private float recoveryRate;
+    private float TimeToDeath;
+    private float recoveryRate;
     private FireManagerScript managerScript;
     
 
@@ -22,17 +22,16 @@ public class DyingScripts : MonoBehaviour
         recoveryRate = value_a * 1f / 100f;
     }
     private void Update() {
-        Debug.Log(bloodBorder.color.a);
         if (_burning > 0)
         {
             TimeToDeath -= 1f * Time.deltaTime;
-            bloodBorder.color = new Color(bloodBorder.color.r, bloodBorder.color.g, bloodBorder.color.b, 
-            Mathf.MoveTowards(bloodBorder.color.a, 1f, recoveryRate * Time.deltaTime));
+            //bloodBorder.color = new Color(bloodBorder.color.r, bloodBorder.color.g, bloodBorder.color.b, 
+            //Mathf.MoveTowards(bloodBorder.color.a, 1f, recoveryRate * Time.deltaTime));
         } else
         {
             TimeToDeath = Mathf.MoveTowards(TimeToDeath, MaxTimeToDeath, 1f * Time.deltaTime);
-            bloodBorder.color = new Color(bloodBorder.color.r, bloodBorder.color.g, bloodBorder.color.b, 
-            Mathf.MoveTowards(bloodBorder.color.a, 0f, recoveryRate * Time.deltaTime));
+            //bloodBorder.color = new Color(bloodBorder.color.r, bloodBorder.color.g, bloodBorder.color.b, 
+            //Mathf.MoveTowards(bloodBorder.color.a, 0f, recoveryRate * Time.deltaTime));
         }
         
 
