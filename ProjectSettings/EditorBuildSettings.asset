@@ -6,13 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartCutScene.unity
+    guid: 343fbd3bce71c454c9155883caf1a553
+  - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: d4ce0c63537c0bb41a26659893648578
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Level1.unity
     guid: 47afc30a88a84fc40acfbea8003fce36
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Level2.unity
     guid: 48ddf76c5ed6ded46b026ab1ebd51187
   - enabled: 1
     path: Assets/Scenes/Win1.unity
@@ -21,12 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Win2.unity
     guid: 7ace1bec40aadc447a3e4a61c2d1628d
   - enabled: 1
-    path: Assets/Scenes/Loose 1.unity
+    path: Assets/Scenes/Loose1.unity
     guid: a1a8559f6f147794ba718c12b485104f
   - enabled: 1
-    path: Assets/Scenes/Loose 2.unity
+    path: Assets/Scenes/Loose2.unity
     guid: cff3a2e316ab8d94bad4b52c9fb1d891
   - enabled: 1
-    path: Assets/Scenes/End Credits.unity
+    path: Assets/Scenes/EndCredits.unity
     guid: cc7377c2642e81a48a9d25bd8079f46f
   m_configObjects: {}
